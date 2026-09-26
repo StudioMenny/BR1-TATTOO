@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Stili & Prezzi — BR1 Tattoo Studio</title>
+<meta name="description" content="Gli stili di BR1 e un calcolatore per una stima immediata del prezzo del tuo tatuaggio.">
+<meta name="theme-color" content="#0B0908">
+<link rel="icon" href="favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="BR1 Tattoo Studio">
+<meta property="og:title" content="Stili & Prezzi — BR1 Tattoo Studio">
+<meta property="og:description" content="Gli stili di BR1 e un calcolatore per una stima immediata del prezzo del tuo tatuaggio.">
+<meta property="og:image" content="og-preview.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="BR1 Tattoo Studio">
+<meta name="twitter:image" content="og-preview.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@400;700;800&family=Space+Mono:wght@400;700&family=Spectral:ital,wght@0,300;0,400;1,300&family=UnifrakturMaguntia&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="progress"></div>
+
+<header class="site-head">
+  <a class="brand" href="index.html"><span class="brand__mark">BR1</span><span class="brand__tag">Tattoo Studio</span></a>
+  <input type="checkbox" id="nav-toggle" class="nav-toggle" hidden>
+  <label class="burger" for="nav-toggle" aria-label="Apri il menu"><span></span><span></span><span></span></label>
+  <nav class="nav">
+    <a href="index.html">Home</a>
+    <a href="galleria.html">Galleria</a>
+    <a class="is-current" href="stili.html">Stili &amp; Prezzi</a>
+    <a href="studio.html">Lo studio</a>
+    <a href="cura.html">Cura &amp; FAQ</a>
+    <a href="contatti.html">Prenota</a>
+  </nav>
+</header>
+
+<main>
+
+  <section class="hero hero--page">
+    <div class="hero__bg hero__bg--stili"></div>
+    <div class="hero__grain"></div>
+    <div class="hero__inner">
+      <span class="eyebrow">Cosa tatuiamo</span>
+      <h1 class="hero__title">Stili<br>&amp; Prezzi</h1>
+      <p class="lead" style="margin-top:1.5rem">Sei linguaggi, una regola: il disegno deve reggere anche fra vent'anni.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <div class="grid grid--3">
+        <article class="card reveal"><span class="card__num">01 / Realismo</span><h3>Realismo black &amp; grey</h3><p>Ritratti, occhi, statue. Contrasti profondi e sfumature: serve spazio e più sedute.</p><p class="mono" style="margin-top:1rem;color:var(--neon)">Da 3 ore</p></article>
+        <article class="card reveal" data-d="1"><span class="card__num">02 / Giapponese</span><h3>Giapponese tradizionale</h3><p>Koi, hannya, onde, ciliegi. Pensato per zone intere: si progetta tutto, poi si tatua a blocchi.</p><p class="mono" style="margin-top:1rem;color:var(--neon)">Progetti a sedute</p></article>
+        <article class="card reveal" data-d="2"><span class="card__num">03 / Fineline</span><h3>Fineline &amp; micro</h3><p>Linea sottile e soggetti piccoli. Va tenuto in scala giusta: troppo piccolo si chiude negli anni.</p><p class="mono" style="margin-top:1rem;color:var(--neon)">Da 1 ora</p></article>
+        <article class="card reveal"><span class="card__num">04 / Blackwork</span><h3>Blackwork &amp; dotwork</h3><p>Nero pieno, puntinato, ornamentale. Ottimo per riempire e per coprire vecchi pezzi.</p><p class="mono" style="margin-top:1rem;color:var(--neon)">Da 2 ore</p></article>
+        <article class="card reveal" data-d="1"><span class="card__num">05 / Lettering</span><h3>Lettering e scritte</h3><p>Gotico, corsivo, chicano. La calligrafia è disegnata a mano sulla tua frase.</p><p class="mono" style="margin-top:1rem;color:var(--neon)">Da 1 ora</p></article>
+        <article class="card reveal" data-d="2"><span class="card__num">06 / Old School</span><h3>Old school a colori</h3><p>Contorni netti e colori pieni. Lo stile più leggibile a distanza, anche fra trent'anni.</p><p class="mono" style="margin-top:1rem;color:var(--neon)">Da 1,5 ore</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section panel panel--oxide" id="preventivo">
+    <div class="panel__bg" style="background-image:url('img/inchiostro.jpg')"></div>
+    <div class="wrap split split--wide-right">
+      <div class="reveal">
+        <span class="eyebrow">Preventivo istantaneo</span>
+        <h2 class="mask"><span>Quanto costa,<br>più o meno</span></h2>
+        <ul class="ticks" style="margin-top:2rem">
+          <li>Minimo di studio €80, disegno incluso</li>
+          <li>Acconto 20% alla conferma, si scala dal totale</li>
+          <li>Primo ritocco entro 6 mesi gratuito</li>
+          <li>Contanti, carta e bonifico</li>
+        </ul>
+      </div>
+
+      <div class="calc reveal" data-d="1" id="calc">
+        <div class="form form--2">
+          <div class="field"><label for="c-misura">Misura</label>
+            <select id="c-misura" name="misura">
+              <option value="0.8">Piccolo — fino a 8 cm</option>
+              <option value="1.8" selected>Medio — 8 / 15 cm</option>
+              <option value="3.5">Grande — 15 / 25 cm</option>
+              <option value="8">Manica, schiena, gamba</option>
+            </select></div>
+          <div class="field"><label for="c-stile">Stile</label>
+            <select id="c-stile" name="stile">
+              <option value="1.4">Realismo</option><option value="1.3">Giapponese</option>
+              <option value="0.9">Fineline</option><option value="1">Blackwork</option>
+              <option value="0.9">Lettering</option><option value="1">Old school</option>
+            </select></div>
+          <div class="field"><label for="c-zona">Zona</label>
+            <select id="c-zona" name="zona">
+              <option value="1">Braccio o gamba</option><option value="1.15">Schiena o petto</option>
+              <option value="1.25">Costole o interno braccio</option><option value="1.3">Mano, collo, piede</option>
+            </select></div>
+          <div class="field"><label for="c-colore">Colore</label>
+            <select id="c-colore" name="colore"><option value="1">Nero e grigio</option><option value="1.25">A colori</option></select></div>
+        </div>
+        <div class="calc__out">
+          <div>
+            <span class="mono" style="color:var(--bone-dim)">Fascia indicativa</span>
+            <div class="calc__price" id="calc-out">€0</div>
+            <span class="mono" id="calc-time" style="color:var(--bone-dim)"></span>
+          </div>
+          <p class="calc__note">Stima orientativa. Per coperture e rework serve una consulenza dal vivo.</p>
+        </div>
+        <div class="btn-row"><a class="btn btn--neon" href="contatti.html"><span>Fissa la consulenza</span></a></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <span class="eyebrow reveal">Riferimenti</span>
+      <h2 class="reveal">Tariffe di partenza</h2>
+      <ul class="list-lines" style="margin-top:2.5rem">
+        <li class="reveal"><span>Minimo studio</span><span>€80</span></li>
+        <li class="reveal" data-d="1"><span>Mezza giornata</span><span>€380 · circa 4 ore</span></li>
+        <li class="reveal" data-d="2"><span>Giornata intera</span><span>€680 · circa 7 ore</span></li>
+        <li class="reveal" data-d="3"><span>Tavola flash</span><span>Da €120</span></li>
+        <li class="reveal" data-d="4"><span>Cover-up</span><span>Su consulenza</span></li>
+        <li class="reveal"><span>Buono regalo</span><span>Da €80 · valido 12 mesi</span></li>
+      </ul>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-foot">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <span class="foot-mark">BR1</span>
+        <p class="muted" style="max-width:34ch">Tattoo studio su appuntamento.</p>
+      </div>
+      <div>
+        <h4>Contatti</h4>
+        <ul>
+          <li><a href="mailto:studiomenny.web@gmail.com">studiomenny.web@gmail.com</a></li>
+          <li><a href="tel:+393665488260">+39 366 548 8260</a></li>
+          <li class="muted">Via Palmino Sterzi 41</li>
+        </ul>
+      </div>
+      <div>
+        <h4>Orari</h4>
+        <ul class="muted">
+          <li>Mar – Ven · 11 – 19</li>
+          <li>Sabato · 10 – 17</li>
+          <li>Dom e Lun · chiuso</li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© <span data-year></span> BR1 Tattoo Studio · P.IVA 00000000000</span>
+      <nav class="foot-legal" aria-label="Informazioni legali">
+        <a href="legale.html#note-legali">Note legali</a>
+        <a href="legale.html#privacy">Privacy</a>
+        <a href="legale.html#cookie">Cookie</a>
+      </nav>
+      <span>Solo maggiorenni</span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

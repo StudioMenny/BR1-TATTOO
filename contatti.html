@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Prenota — BR1 Tattoo Studio</title>
+<meta name="description" content="Prenota una consulenza da BR1 Tattoo Studio. studiomenny.web@gmail.com · +39 366 548 8260 · Via Palmino Sterzi 41.">
+<meta name="theme-color" content="#0B0908">
+<link rel="icon" href="favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="BR1 Tattoo Studio">
+<meta property="og:title" content="Prenota — BR1 Tattoo Studio">
+<meta property="og:description" content="Prenota una consulenza da BR1 Tattoo Studio. studiomenny.web@gmail.com · +39 366 548 8260 · Via Palmino Sterzi 41.">
+<meta property="og:image" content="og-preview.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="BR1 Tattoo Studio">
+<meta name="twitter:image" content="og-preview.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@400;700;800&family=Space+Mono:wght@400;700&family=Spectral:ital,wght@0,300;0,400;1,300&family=UnifrakturMaguntia&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="progress"></div>
+
+<header class="site-head">
+  <a class="brand" href="index.html"><span class="brand__mark">BR1</span><span class="brand__tag">Tattoo Studio</span></a>
+  <input type="checkbox" id="nav-toggle" class="nav-toggle" hidden>
+  <label class="burger" for="nav-toggle" aria-label="Apri il menu"><span></span><span></span><span></span></label>
+  <nav class="nav">
+    <a href="index.html">Home</a>
+    <a href="galleria.html">Galleria</a>
+    <a href="stili.html">Stili &amp; Prezzi</a>
+    <a href="studio.html">Lo studio</a>
+    <a href="cura.html">Cura &amp; FAQ</a>
+    <a class="is-current" href="contatti.html">Prenota</a>
+  </nav>
+</header>
+
+<main>
+
+  <section class="hero hero--page">
+    <div class="hero__bg hero__bg--contatti"></div>
+    <div class="hero__grain"></div>
+    <div class="hero__inner">
+      <span class="eyebrow">Scrivimi</span>
+      <h1 class="hero__title">Prenota</h1>
+      <p class="lead" style="margin-top:1.5rem">Racconta l'idea con le tue parole. Rispondo entro due giorni lavorativi.</p>
+    </div>
+  </section>
+
+  <section class="section section--tight">
+    <div class="wrap">
+      <div class="quick reveal">
+        <a href="mailto:studiomenny.web@gmail.com"><span>Email</span><strong>studiomenny.web@<br>gmail.com</strong></a>
+        <a href="tel:+393665488260"><span>Telefono</span><strong>+39 366 548 8260</strong></a>
+        <a href="https://wa.me/393665488260" target="_blank" rel="noopener"><span>WhatsApp</span><strong>Scrivi ora</strong></a>
+        <div><span>Studio</span><strong>Via Palmino<br>Sterzi 41</strong></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section panel">
+    <div class="panel__bg" style="background-image:url('img/disegno-koi.jpg')"></div>
+    <div class="wrap split split--wide-left">
+      <div class="reveal">
+        <span class="eyebrow">Richiesta appuntamento</span>
+        <h2 class="mask"><span>Dimmi cosa<br>hai in mente</span></h2>
+        <p class="lead" style="margin-top:1.5rem">Più dettagli mi dai, più la risposta è precisa. Le immagini di riferimento le alleghi all'email che si apre alla fine.</p>
+        <div class="acc" style="margin-top:2rem">
+          <details><summary>Cosa succede dopo</summary><p>Ti scrivo con una fascia di prezzo e due o tre date. L'appuntamento si conferma con un acconto del 20%.</p></details>
+          <details><summary>Se devi disdire</summary><p>Con almeno 48 ore di anticipo l'acconto resta valido per una nuova data.</p></details>
+        </div>
+      </div>
+
+      <form class="calc reveal" data-d="1" id="booking">
+        <div class="form form--2">
+          <div class="field"><label for="f-nome">Nome</label><input id="f-nome" name="nome" type="text" required placeholder="Come ti chiami"></div>
+          <div class="field"><label for="f-telefono">Telefono</label><input id="f-telefono" name="telefono" type="tel" placeholder="Per i messaggi veloci"></div>
+          <div class="field full"><label for="f-email">Email</label><input id="f-email" name="email" type="email" required placeholder="Dove ti rispondo"></div>
+          <div class="field"><label for="f-stile">Stile</label>
+            <select id="f-stile" name="stile"><option>Non lo so ancora</option><option>Realismo</option><option>Giapponese</option><option>Fineline</option><option>Blackwork</option><option>Lettering</option><option>Old school</option><option>Cover-up</option></select></div>
+          <div class="field"><label for="f-zona">Zona del corpo</label><input id="f-zona" name="zona" type="text" placeholder="Es. avambraccio interno"></div>
+          <div class="field"><label for="f-misura">Misura indicativa</label><input id="f-misura" name="misura" type="text" placeholder="Es. 12 cm"></div>
+          <div class="field"><label for="f-prima">Primo tatuaggio?</label><select id="f-prima" name="prima"><option>Sì, il primo</option><option>No, ne ho altri</option></select></div>
+          <div class="field full"><label for="f-idea">La tua idea</label><textarea id="f-idea" name="idea" required placeholder="Soggetto, riferimenti, budget, periodo…"></textarea></div>
+        </div>
+        <div class="btn-row"><button class="btn btn--neon" type="submit"><span>Invia la richiesta</span></button></div>
+        <p class="note" id="booking-msg" hidden style="margin-top:1.5rem">Si è aperto il tuo programma di posta con il messaggio già pronto: controlla e premi invia.</p>
+      </form>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <span class="eyebrow reveal">Dove siamo</span>
+      <h2 class="reveal" style="margin-bottom:2rem">Via Palmino Sterzi 41</h2>
+      <div class="map reveal" data-map>
+        <div class="map__consent">
+          <p>La mappa è fornita da Google e, una volta aperta, può usare cookie propri. <a href="legale.html#cookie">Dettagli</a></p>
+          <button class="btn btn--neon" type="button"><span>Mostra la mappa</span></button>
+        </div>
+      </div>
+      <div class="info-row" style="margin-top:2.5rem">
+        <div class="reveal"><span class="mono muted">Martedì / Venerdì</span><strong>11 – 19</strong></div>
+        <div class="reveal" data-d="1"><span class="mono muted">Sabato</span><strong>10 – 17</strong></div>
+        <div class="reveal" data-d="2"><span class="mono muted">Domenica e lunedì</span><strong>Chiuso</strong></div>
+        <div class="reveal" data-d="3"><span class="mono muted">Buoni regalo</span><strong>Da €80</strong></div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-foot">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <span class="foot-mark">BR1</span>
+        <p class="muted" style="max-width:34ch">Tattoo studio su appuntamento.</p>
+      </div>
+      <div>
+        <h4>Contatti</h4>
+        <ul>
+          <li><a href="mailto:studiomenny.web@gmail.com">studiomenny.web@gmail.com</a></li>
+          <li><a href="tel:+393665488260">+39 366 548 8260</a></li>
+          <li class="muted">Via Palmino Sterzi 41</li>
+        </ul>
+      </div>
+      <div>
+        <h4>Orari</h4>
+        <ul class="muted">
+          <li>Mar – Ven · 11 – 19</li>
+          <li>Sabato · 10 – 17</li>
+          <li>Dom e Lun · chiuso</li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© <span data-year></span> BR1 Tattoo Studio · P.IVA 00000000000</span>
+      <nav class="foot-legal" aria-label="Informazioni legali">
+        <a href="legale.html#note-legali">Note legali</a>
+        <a href="legale.html#privacy">Privacy</a>
+        <a href="legale.html#cookie">Cookie</a>
+      </nav>
+      <span>Solo maggiorenni</span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
